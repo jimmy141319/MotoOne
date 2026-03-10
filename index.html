@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MotoOne 安全帽專賣</title>
+  <meta name="description" content="MotoOne 安全帽專賣，提供全罩、3/4、越野、復古安全帽，支援 LINE 直接詢問。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div>
+      <h1>MotoOne 安全帽專賣</h1>
+      <p class="sub">全罩｜3/4｜越野｜復古</p>
+    </div>
+    <a class="line-top" href="https://line.me/R/ti/p/~jimmy141319" target="_blank" rel="noopener">LINE客服</a>
+  </div>
+</header>
+<section class="hero">
+  <div class="wrap">
+    <h2>綜合型安全帽商店</h2>
+    <p>先用 10 款商品完成穩定上線版本，之後再逐步擴充到幾百頂庫存展示。現在可以直接用 LINE 詢問商品與價格。</p>
+  </div>
+</section>
+<section class="toolbar wrap">
+  <input id="searchInput" class="search" type="text" placeholder="搜尋商品，例如 LS2、ZEUS、FOX">
+  <div class="filters">
+    <button class="filter-btn active" onclick="setCategory('all', this)">全部</button>
+    <button class="filter-btn" onclick="setCategory('full', this)">全罩</button>
+    <button class="filter-btn" onclick="setCategory('open', this)">3/4</button>
+    <button class="filter-btn" onclick="setCategory('offroad', this)">越野</button>
+    <button class="filter-btn" onclick="setCategory('retro', this)">復古</button>
+  </div>
+</section>
+<main class="wrap">
+  <section id="productGrid" class="product-grid"></section>
+</main>
+<footer><div class="wrap">MotoOne Helmet Store</div></footer>
+<script src="products.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
